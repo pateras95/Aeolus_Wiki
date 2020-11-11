@@ -60,6 +60,13 @@
     font-weight: 700;
   }
 
+  .dropdown-item{
+    font-size: clamp(12px, 0.9vw, 35px);
+    font-family: monospace;
+    color:  #002e5a !important;
+    font-weight: 700;
+  }
+
   .navbar-dark .navbar-nav .active>.nav-link,
   .navbar-dark .navbar-nav .nav-link:focus,
   .navbar-dark .navbar-nav .nav-link:hover {
@@ -78,7 +85,7 @@
     font-weight: 700;
   }
 
-  .navbar-dark .navbar-toggler{
+  .navbar-dark .navbar-toggler {
     font-size: clamp(12px, 1.2vw, 50px);
     font-family: monospace;
     color: #fff !important;
@@ -120,16 +127,27 @@
             Πληροφορίες
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Αποστολές</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Αντικέιμενα</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Τέρατα/Metin και Drop</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Χάρτες XP και τοποθεσίες Boss</a>
           </div>
         </li>
       </ul>
       <ul class=" navbar-nav my-2 my-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Αντικέιμενα</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Συστήματα
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Κατοικιδίων</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" >Κορδέλας</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Bonus-Λίθοι</a>
@@ -141,38 +159,37 @@
     </div>
   </nav>
   <div class="container-fluid">
-  <div class="row" style="justify-content: center; overflow-x:hidden;">
-    <div class="col-lg-6 col-sm-9">
-      <div class="pt-5 general-text">
-        <p> Καλώς ήρθατε στο Wiki του παχνιδιού. Αν είσαι νέος παίχτης, ελπίζουμε οι πληροφορίες
-          που σου δίνουμε να είναι αρκετές και αναλυτικές για να μπορέσεις να εξελιχθείς μέσα στο παιχνίδι.
-        </p>
-        <p>
-          O Server λειτουργεί χωρίς ωράριο και μπορείτε να εγγραφείτε και να παίξετε
-          οποιαδήποτε στιγμή. Τα rates του Server είναι σταθερά 1000% σε EXP, yang και αντικείμενα. Υπάρχουν πολλά νέα
-          αντικείμενα, νέες αποστολές και νεόι χάρτες.
-          Το μέγιστο Lv είναι 250.
-        </p>
-        <p>
-          Το παιχνίδι είναι 100% μεταφρασμένο στα ελληνικά καθώς και έχουν γίνει διορθώσεις σε πολλά bug. Παρ' όλα
-          αυτά,
-          αν
-          συναντήσεις οτιδήποτε που μπορεί να μας ξέφυγε, θα θέλαμε να μας ενημερώσεις άμεσα.
-          Τρόπους επικοινωνίας μπορείς να βρεις στη σελίδα Επικοινωνία.
-        </p>
-        <p>
-          Καλή διαμονή στον Server μας.
-        </p>
+    <div class="row" style="justify-content: center; overflow-x:hidden;">
+      <div class="col-lg-6 col-sm-9">
+        <div class="pt-5 general-text">
+          <p> Καλώς ήρθατε στο Wiki του παχνιδιού. Αν είσαι νέος παίχτης, ελπίζουμε οι πληροφορίες
+            που σου δίνουμε να είναι αρκετές και αναλυτικές για να μπορέσεις να εξελιχθείς μέσα στο παιχνίδι.
+          </p>
+          <p>
+            Τα rates του Server είναι σταθερά 1000% σε EXP, yang και αντικείμενα. Ο Server είναι 24/7 Online και παρέχει
+            διαδικτυακή εξυπηρέτηση πελατών για οποιαδήποτε απορία η πρόβλημα που αντιμετωπίζετε μην διστάσετε να
+            επικοινωνήσετε μαζί μας.
+          </p>
+          <p>
+            Το παιχνίδι είναι 100% μεταφρασμένο στα ελληνικά καθώς και έχουν γίνει διορθώσεις σε πολλά bug. Παρ' όλα
+            αυτά,
+            αν
+            συναντήσεις οτιδήποτε που μπορεί να μας ξέφυγε, θα θέλαμε να μας ενημερώσεις άμεσα.
+            Τρόπους επικοινωνίας μπορείς να βρεις στη σελίδα Επικοινωνία.
+          </p>
+          <p>
+            Καλή διαμονή στον Server μας.
+          </p>
+        </div>
+      </div>
+      <div col="col-lg-6 col-sm-3">
+        <iframe class="custom-iframe pt-5" src="https://www.youtube.com/embed/kwAtMAvTJTY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
     </div>
-    <div col="col-lg-6 col-sm-3">
-      <iframe class="custom-iframe pt-5" src="https://www.youtube.com/embed/kwAtMAvTJTY" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+
   </div>
-  
-</div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
