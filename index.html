@@ -47,11 +47,11 @@
     background-size: cover;
   }
 
-  .bg-light {
+  .bg-dark {
     background-color: #002e5a !important;
   }
 
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-dark .navbar-nav .nav-link {
     margin-left: 25px;
     margin-right: 25px;
     font-size: clamp(12px, 1.2vw, 50px);
@@ -60,9 +60,9 @@
     font-weight: 700;
   }
 
-  .navbar-light .navbar-nav .active>.nav-link,
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
     margin-left: 25px;
     margin-right: 25px;
     font-size: clamp(12px, 1.2vw, 50px);
@@ -78,7 +78,15 @@
     font-weight: 700;
   }
 
+  .navbar-dark .navbar-toggler{
+    font-size: clamp(12px, 1.2vw, 50px);
+    font-family: monospace;
+    color: #fff !important;
+    font-weight: 700;
+  }
+
   .custom-iframe {
+    margin-top: 10%;
     /* height: 100%;*/
     /* width: 50vw; */
     /* width: 100%;  */
@@ -89,14 +97,14 @@
   <div>
     <img src="./Assets/banner_page_img.jpg" class="banner">
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand navbar-toggler" href="#">Aeolus Wiki</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse navbar-potition" id="navbarSupportedContent">
-      <div class="server-icon">
+      <div class="server-icon d-none d-lg-block">
         <img src="./Assets/server_icon_new.png" class="img-radius" />
       </div>
       <ul class="navbar-nav mr-auto menu-text">
@@ -132,17 +140,16 @@
       </ul>
     </div>
   </nav>
-
+  <div class="container-fluid">
   <div class="row" style="justify-content: center; overflow-x:hidden;">
     <div class="col-lg-6 col-sm-9">
       <div class="pt-5 general-text">
-        <p> Η συγκεκριμένη σελίδα αφορά καθαρά το Wiki του παχνιδιού. Αν είσαι νέος παίχτης, ελπίζουμε οι πληροφορίες
-          που
-          σου δίνουμε να είναι αρκετές και αναλυτικές για να μπορέσεις να εξελιχθείς μέσα στο παιχνίδι.
+        <p> Καλώς ήρθατε στο Wiki του παχνιδιού. Αν είσαι νέος παίχτης, ελπίζουμε οι πληροφορίες
+          που σου δίνουμε να είναι αρκετές και αναλυτικές για να μπορέσεις να εξελιχθείς μέσα στο παιχνίδι.
         </p>
         <p>
           O Server λειτουργεί χωρίς ωράριο και μπορείτε να εγγραφείτε και να παίξετε
-          οποιαδήποτε στιγμή. Τα rates του Server είναι σταθερά 500% σε EXP, yang και αντικείμενα. Υπάρχουν πολλά νέα
+          οποιαδήποτε στιγμή. Τα rates του Server είναι σταθερά 1000% σε EXP, yang και αντικείμενα. Υπάρχουν πολλά νέα
           αντικείμενα, νέες αποστολές και νεόι χάρτες.
           Το μέγιστο Lv είναι 250.
         </p>
@@ -164,6 +171,8 @@
         allowfullscreen></iframe>
     </div>
   </div>
+  
+</div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
