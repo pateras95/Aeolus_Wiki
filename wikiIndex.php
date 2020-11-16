@@ -56,7 +56,7 @@
       </div>
       <ul class="navbar-nav mr-auto menu-text">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Αρχική</a>
+          <a class="nav-link" href="#">Αρχική</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://aeolus2.eu/" target="_blank">Ιστοσελίδα</a>
