@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="../Assets/globalCss.css" >
+    <link rel="stylesheet" href="../Assets/globalCss.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -16,7 +16,6 @@
 </head>
 
 <style>
-
     body,
     html {
         background-image: url("../Assets/default-background.jpg");
@@ -34,16 +33,27 @@
 
     /* mission-css */
 
-    .npc-img{
-        width: 60%;
+    .npc-img {
+        margin-top: 50px;
+        width: 80%;
         min-width: 80px;
-        max-width:200px;
-        object-fit:scale-down;
-        max-height: 250px;
+        max-width: 250px;
+        object-fit: scale-down;
+        max-height: 300px;
     }
 
-    .header-text{
+    .header-text {
         width: 50%;
+    }
+
+    .general-text{
+        color: black !important;
+        text-align: center;
+    }
+
+    .table .thead-dark th{
+        background-color: #002e5a !important;
+        border: 1px solid white;
     }
 </style>
 
@@ -74,7 +84,7 @@
                         Πληροφορίες
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Αποστολές</a>
+                        <a class="dropdown-item" href="Missions.html">Αποστολές</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Αντικέιμενα</a>
                         <div class="dropdown-divider"></div>
@@ -107,35 +117,62 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="pt-5 header-text ">
-            <p>Παρακάτω θα βρείτε όλες τις αποστολές όσον αφορά το κομμάτι του βιολόγου, από το Lv 30 μέχρι το Lv 200.
-                Τα npc που αναθέτουν τις παρακάτω αποστολές είναι τρία: Βιολόγος, Seon Peyong και Choo So Young.
-                Κάντε click στο όνομα ενώς Npcγια να προβάλλετε όλες τι αποστολές και για κάθε αποστολή ξεχωριστά,
-                για το αντικείμενό της και τα χαρακτηριστικά της.</p>
+            <p>Το NPC Seon-Pyeong βρίσκεται στις πρώτες πόλεις κάθε βασιλείου.
+                Aφού παραδώσεις την απαιτούμενη ποσότητα των αντικειμένων, θα πρέπει να παραδώσεις και τον αντίστοιχο
+                λίθο ψυχής.</p>
+            <p>Μπορείς να επηρεάσεις τον χρόνο δίνοντας έναν λωτό <img src="../Assets/lotous.png" alt="" class="mt-n2"> .</p>
         </div>
         <div class="row mt-5 mb-5" style="justify-content: center; overflow-x:hidden;">
-            <div class="col-lg-3 col-sm-9">
-                <a href="npcOne.html" class="general-text w-50">
-                    <div>
-                        Αποστολές Βιολόγου απο 30 lvl εώς 90 lvl
-                    </div>
-                    <img src="../Assets/npc_1.png" class="npc-img"/>
-                </a>
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="header-text">Seon-Pyeong</div>
+                <img src="../Assets/npc_2.png" class="npc-img" />
             </div>
-            <div class="col-lg-3 col-sm-9">
-                <a href="npcTwo.php" class="general-text w-50">
-                    <div>
-                        Αποστολές Seon-Pyeong απο 92 lvl εώς 96 lvl
-                    </div>
-                    <img src="../Assets/npc_2.png" class="npc-img"/>
-                </a>
-            </div>>
-            <div class="col-lg-3 col-sm-9">
-                <a href="npcTwo.php" class="general-text w-50">
-                    <div>
-                        Αποστολές Choo So Young απο 120 lvl εώς 150 lvl
-                    </div>
-                    <img src="../Assets/npc_3.png" class="npc-img"/>
-                </a>
+            <div class="col-lg-6 col-sm-9">
+                <div class="table-responsive-sm">
+                    <table class="table table-striped table-light">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Αποστολή</th>
+                                <th scope="col">Αντικείμενο</th>
+                                <th scope="col">Ποσότητα</th>
+                                <th scope="col">Χρόνος Παράδοσης</th>
+                                <th scope="col">Ανταμοιβή</th>
+                            </tr>
+                        </thead>
+                        <tbody class="general-text">
+                            <tr>
+                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
+                                <td class="align-middle"><div>Πετράδι της Ζηλοφθονίας</div><img src="../Assets/mission_9.png" alt=""></td>
+                                <td class="align-middle">10</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">100 Αξία Επίθεσης ή <br>
+                                                        5% Μέση Ζημιά ή <br>
+                                                        2% Ζημιά Ικανοτήτων
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
+                                <td class="align-middle"><div>Πετράδι της Σοφίας</div><img src="../Assets/mission_10.png" alt=""></td>
+                                <td class="align-middle">20</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">125 Αξία Επίθεσης ή <br>
+                                                        7% Μέση Ζημιά ή <br>
+                                                        3% Ζημιά Ικανοτήτων
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
+                                <td class="align-middle"><div>Πετράδι της Πίστης</div><img src="../Assets/mission_11.png" alt=""></td>
+                                <td class="align-middle">10</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">175 Αξία Επίθεσης ή <br>
+                                                        8% Μέση Ζημιά ή <br>
+                                                        5% Ζημιά Ικανοτήτων
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
