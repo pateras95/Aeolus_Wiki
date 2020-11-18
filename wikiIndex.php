@@ -71,7 +71,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Αντικέιμενα</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Τέρατα/Metin και Drop</a>
+            <a class="dropdown-item" href="#">Τοποθεσίες Boss και Drop</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Χάρτες XP και τοποθεσίες Boss</a>
           </div>
