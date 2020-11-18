@@ -117,16 +117,16 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="pt-5 header-text ">
-            <p>Το NPC Seon-Pyeong βρίσκεται στις πρώτες πόλεις κάθε βασιλείου.
+            <p>Το NPC βιολόγος βρίσκεται στις πρώτες πόλεις κάθε βασιλείου.
                 Aφού παραδώσεις την απαιτούμενη ποσότητα των αντικειμένων, θα πρέπει να παραδώσεις και τον αντίστοιχο
                 λίθο ψυχής.</p>
-                <p>Μπορείς να επηρεάσεις τον χρόνο δίνοντας έναν λωτό <img src="../Assets/lotous.png" alt="" class="mt-n2">, <br>
+            <p>Μπορείς να επηρεάσεις τον χρόνο δίνοντας έναν λωτό <img src="../Assets/lotous.png" alt="" class="mt-n2">, <br>
             καθώς και να αύξησης τις πιθανότητες επιτυχους παράδωσης με το ελιξήριο του ερευνητή <img src="../Assets/pot.png" alt="" class="mt-n2">.</p>
         </div>
         <div class="row mt-5 mb-5" style="justify-content: center; overflow-x:hidden;">
             <div class="col-lg-3 d-none d-lg-block">
-                <div class="header-text">Seon-Pyeong</div>
-                <img src="../Assets/npc_2.png" class="npc-img" />
+                <div class="header-text">Βιολόγος Chaegirab</div>
+                <img src="../Assets/npc_1.png" class="npc-img" />
             </div>
             <div class="col-lg-6 col-sm-9">
                 <div class="table-responsive-sm">
@@ -142,34 +142,60 @@
                         </thead>
                         <tbody class="general-text">
                             <tr>
-                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
-                                <td class="align-middle"><div>Πετράδι της Ζηλοφθονίας</div><img src="../Assets/mission_9.png" alt=""></td>
+                                <th scope="row" class="align-middle">Η έρευνα του Βιολόγου</th>
+                                <td class="align-middle"><div>Δόντι Ορκ</div><img src="../Assets/mission_1.png" alt=""></td>
                                 <td class="align-middle">10</td>
                                 <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">100 Αξία Επίθεσης ή <br>
-                                                        5% Μέση Ζημιά ή <br>
-                                                        2% Ζημιά Ικανοτήτων
-                                </td>
+                                <td class="align-middle">+20% Ταχύτητα κίνησης</td>
                             </tr>
                             <tr>
-                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
-                                <td class="align-middle"><div>Πετράδι της Σοφίας</div><img src="../Assets/mission_10.png" alt=""></td>
+                                <th scope="row" class="align-middle">Η έρευνα του Βιολόγου</th>
+                                <td class="align-middle"><div>Βιβλία με κατάρες</div><img src="../Assets/mission_2.png" alt=""></td>
                                 <td class="align-middle">20</td>
                                 <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">125 Αξία Επίθεσης ή <br>
-                                                        7% Μέση Ζημιά ή <br>
-                                                        3% Ζημιά Ικανοτήτων
-                                </td>
+                                <td class="align-middle">+15% ταχύτητα επίθεσης!</td>
                             </tr>
                             <tr>
-                                <th scope="row" class="align-middle">Οι Παράξενες Ασχολίες του Seon</th>
-                                <td class="align-middle"><div>Πετράδι της Πίστης</div><img src="../Assets/mission_11.png" alt=""></td>
+                                <th scope="row" class="align-middle">Το άιτημα του Βιολόγου</th>
+                                <td class="align-middle"><div>Ενθύμιο του Δαίμονα</div><img src="../Assets/mission_3.png" alt=""></td>
                                 <td class="align-middle">10</td>
                                 <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">175 Αξία Επίθεσης ή <br>
-                                                        8% Μέση Ζημιά ή <br>
-                                                        5% Ζημιά Ικανοτήτων
-                                </td>
+                                <td class="align-middle">+95 Αμυνα</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Το άιτημα του Βιολόγου</th>
+                                <td class="align-middle"><div>Βόλος Πάγου</div><img src="../Assets/mission_4.png" alt=""></td>
+                                <td class="align-middle">20</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">+100 Αξία επίθεσης</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Η Αναζήτηση του Βιολόγου</th>
+                                <td class="align-middle"><div>Κλαδί Zelkova</div><img src="../Assets/mission_5.png" alt=""></td>
+                                <td class="align-middle">25</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">+10% Μείωση ζημιάς (μόνιμο)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Η Αναζήτηση του Βιολόγου</th>
+                                <td class="align-middle"><div>Πιστοποιητικά Tugyis</div><img src="../Assets/mission_6.png" alt=""></td>
+                                <td class="align-middle">30</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">+150 Αξία επίθεσης <br> και +10 ταχύτητα επίθεσης</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Η Χάρη του Βιολόγου</th>
+                                <td class="align-middle"><div>Κόκκινα Κλαδιά</div><img src="../Assets/mission_7.png" alt=""></td>
+                                <td class="align-middle">40</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">+10% Αμυνα προς όλους</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle">Η Χάρη του Βιολόγου</th>
+                                <td class="align-middle"><div>Τα Σημειώματα των Αρχηγών</div><img src="../Assets/mission_8.png" alt=""></td>
+                                <td class="align-middle">50</td>
+                                <td class="align-middle">1 ώρα</td>
+                                <td class="align-middle">10% δύναμη πρoς όλους</td>
                             </tr>
                         </tbody>
                     </table>
