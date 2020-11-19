@@ -103,7 +103,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bonus-Λίθοι</a>
+                    <a class="nav-link" href="bonus.html">Bonus-Λίθοι</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Κανονισμοί</a>
