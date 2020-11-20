@@ -73,6 +73,22 @@
         width: 50px;
         height: 50px;
     }
+
+    .custom-btn{
+        width: 150px;
+        height: 50px;
+        border: 3px solid white;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-weight: 700;
+        color: #c0c0c0 ;
+        background-color: #002e5a !important;
+    }
+
+    .custom-btn:hover{
+        color: white;
+    }
 </style>
 
 <body>
@@ -140,6 +156,15 @@
                 ενδιαφέρει.
             </p>
         </div>
+
+        <b-row>
+            <b-col class="mx-5">
+                <a class="btn custom-btn" href="bonus.html">Bonus</a>
+            </b-col>
+            <b-col class="mx-5">
+                <a class="btn custom-btn" href="stones.php">Λίθοι</a>
+            </b-col>
+        </b-row>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <ol class="carousel-indicators">
