@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Missions</title>
+    <title>Spirit Stones</title>
 </head>
 
 <style>
@@ -53,6 +53,40 @@
     .table .thead-dark th {
         background-color: #002e5a !important;
         border: 1px solid white;
+    }
+
+    .carousel-item {
+        min-height: 800px;
+        height: auto;
+    }
+
+    .content-head {
+        font-size: 15px;
+        font-family: monospace;
+        color: #fff !important;
+        font-weight: 700;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .custom-btn {
+        width: 150px;
+        height: 50px;
+        border: 3px solid white;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: clamp(12px, 1.2vw, 20px);
+        font-weight: 700;
+        color: #c0c0c0;
+        background-color: #002e5a !important;
+    }
+
+    .custom-btn:hover {
+        color: white;
     }
 </style>
 
@@ -103,7 +137,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="bonus.html">Bonus-Λίθοι</a>
+                    <a class="nav-link" href="#">Bonus-Λίθοι</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Κανονισμοί</a>
@@ -113,98 +147,320 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="pt-5 header-text ">
-            <p>Το NPC Choo So Young βρίσκεται στις πρώτες πόλεις κάθε βασιλείου.
-                Aφού παραδώσεις την απαιτούμενη ποσότητα των αντικειμένων, θα πρέπει να παραδώσεις και τον αντίστοιχο
-                λίθο ψυχής.</p>
-            <p>Μπορείς να επηρεάσεις τον χρόνο δίνοντας έναν λωτό <img src="../Assets/lotous.png" alt="" class="mt-n2">, <br>
-                καθώς και να αύξησης τις πιθανότητες επιτυχους παράδωσης με το ελιξήριο του ερευνητή <img src="../Assets/pot.png" alt="" class="mt-n2">.</p>
+            <p>Παρακάτω θα βρέιτε όλα τα μπόνους και τους λιθους που μπορούν να μπουν στα αντικέιμενα, ανα κατηγορία.
+                Περιηγηθείτε με τα βελάκια αριστέρα και δεξία στην αντίστοιχη καρτέλα για την πληροφορία που σας
+                ενδιαφέρει.
+            </p>
         </div>
-        <div class="row mt-5 mb-5" style="justify-content: center; overflow-x:hidden;">
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="header-text">Choo So Young</div>
-                <img src="../Assets/npc_3.png" class="npc-img" />
-            </div>
-            <div class="col-lg-6 col-sm-9">
-                <div class="table-responsive-sm">
-                    <table class="table table-striped table-light">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">Αποστολή</th>
-                                <th scope="col">Αντικείμενο</th>
-                                <th scope="col">Ποσότητα</th>
-                                <th scope="col">Χρόνος Παράδοσης</th>
-                                <th scope="col">Ανταμοιβή</th>
-                            </tr>
-                        </thead>
-                        <tbody class="general-text">
-                            <tr>
-                                <th scope="row" class="align-middle">Το Κόσμημα της Choo So Young</th>
-                                <td class="align-middle">
-                                    <div>Πετράδι Ωκεανού</div><img src="../Assets/mission_12.png" alt="">
-                                </td>
-                                <td class="align-middle">10</td>
-                                <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">10% Ταχύτητα Μαγείας ή <br>
-                                    Αναγέννηση HP 15% ή <br>
-                                    Αναγέννηση SP 20%
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="align-middle">Ο Θησαυρός της Choo So Young</th>
-                                <td class="align-middle">
-                                    <div>Σεντούκι Θυσαυρού</div><img src="../Assets/mission_13.png" alt="">
-                                </td>
-                                <td class="align-middle">20</td>
-                                <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">Διπλάσιο ΕΧΡ +40% (Πιθ.) ή <br>
-                                    Διπλάσια YANG +40% (Πιθ.) ή <br>
-                                    Διπλάσια ITEMS +40% (Πιθ.) ή <br>
-                                    Απορρόφηση SP +50% (Πιθ.)
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="align-middle">Το Πείσμα της Choo So Young</th>
-                                <td class="align-middle">
-                                    <div>Πετράδι της Πίστης</div><img src="../Assets/mission_14.png" alt="">
-                                </td>
-                                <td class="align-middle">10</td>
-                                <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle">40 Ζωτικότητα ή <br>
-                                    40 Ευφυΐα ή <br>
-                                    40 Δύναμη ή <br>
-                                    40 Ευκινησία ή <br>
-                                    15 Ζωτικότητα & 15 Δύναμη ή <br>
-                                    15 Ευφυΐα & 15 Δύναμη ή <br>
-                                    15 Ευφυΐα & 15 Ευκινησία ή <br>
-                                    15 Δύναμη & 15 Ευκινησία
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="align-middle">Η Ευλογία της Choo So Young</th>
-                                <td class="align-middle">
-                                    <div>Σμαραγδόλιθος</div><img src="../Assets/mission_15.png" alt="">
-                                </td>
-                                <td class="align-middle">10</td>
-                                <td class="align-middle">1 ώρα</td>
-                                <td class="align-middle"> + 10.000 ΗP
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <b-row>
+            <b-col class="mx-5">
+                <a class="btn custom-btn mt-2" href="bonus.html">Bonus</a>
+            </b-col>
+            <b-col class="mx-5">
+                <a class="btn custom-btn mt-2" href="stones.php">Λίθοι</a>
+            </b-col>
+        </b-row>
+
+
+        <div class="pt-5 header-text ">
+            <p>
+                Οι Λίθοι ζωτικότας,Απόκρουσης και Αποφυγής βέλων αναβαθμίζονται μέχρι το επίπεδο +7, +6 και +6
+                αντίστοιχα. Οι λίθοι +5 και τα αναβαθμίστικα για να γίνουν + βρίσκόνται απο drop απο τα Boss του
+                παιχνιδιού που μπορείτε να βρείτε στον παρακάτω σύνδεσμο <a href="bosses.html"> ΕΔΩ </a>
+            </p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="mb-2 mt-5 header-text">Λίθοι όπλου</div>
+                    <div class="table-responsive-sm w-75 mb-5" style="margin:0 auto;">
+                        <table class="table table-striped table-light">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Λίθος</th>
+                                    <th scope="col">Αναβάθμιση</th>
+                                    <th scope="col">Bonus</th>
+                                </tr>
+                            </thead>
+                            <tbody class="general-text">
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος κατά Πολεμιστή</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/7/78/Stone_Against_Warrior.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +25% Δυνατό ενάντια σε Πολεμιστές
+                                        <hr>
+                                        +35% Δυνατό ενάντια σε Πολεμιστές
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος κατά Νίντζα</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/f/f6/Stone_Against_Ninja.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +25% Δυνατό ενάντια σε Νίντζα
+                                        <hr>
+                                        +35% Δυνατό ενάντια σε Νίντζα
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος κατά Σούρα</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/3/35/Stone_Against_Sura.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +25% Δυνατό ενάντια σε Σούρα
+                                        <hr>
+                                        +35% Δυνατό ενάντια σε Σούρα
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος κατά Σαμάνο</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/7/77/Stone_Against_Shaman.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +25% Δυνατό ενάντια σε Σαμάνο
+                                        <hr>
+                                        +35% Δυνατό ενάντια σε Σαμάνο
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Τελικής Κρίσης</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/4/47/Stone_of_Deathblow.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +8% Πιθανότητα Κρίσιμου Χτυπήματος
+                                        <hr>
+                                        +15% Πιθανότητα Κρίσιμου Χτυπήματος
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Κατά Τεράτων</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/f/fc/Stone_of_Monsters.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +8% Δυνατό ενάντια σε Τέρατα
+                                        <hr>
+                                        +15% Δυνατό ενάντια σε Τέρατα
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Διάτρησης</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/1/1b/Stone_of_Penetration.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +8% Πιθανότητα Χτύπημα Διάτρησης
+                                        <hr>
+                                        +15% Πιθανότητα Χτύπημα Διάτρησης
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος του Κρυώματος</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/1/1b/Stone_of_Cooldown.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +25% Ταχύτητα Μαγείας
+                                        <hr>
+                                        +35% Ταχύτητα Μαγείας
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="mb-2 mt-5 header-text">Λίθοι Πανοπλίας</div>
+                    <div class="table-responsive-sm w-75 mb-5" style="margin:0 auto;">
+                        <table class="table table-striped table-light">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Λίθος</th>
+                                    <th scope="col">Αναβάθμιση</th>
+                                    <th scope="col">Bonus</th>
+                                </tr>
+                            </thead>
+                            <tbody class="general-text">
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Απόκρουσης</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/d/df/Stone_of_Evasion.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                        <hr>
+                                        +6
+                                    </td>
+                                    <td class="align-middle">
+                                        +8% Πιθανότητα Απόκρουσης
+                                        <hr>
+                                        +15% Πιθανότητα Απόκρουσης
+                                        <hr>
+                                        +20% Πιθανότητα Απόκρουσης
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Αποφυγής</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/c/c9/Stone_of_Ducking.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                        <hr>
+                                        +6
+                                    </td>
+                                    <td class="align-middle">
+                                        +8% Πιθανότητα Αποφυγής Βέλων
+                                        <hr>
+                                        +15% Πιθανότητα Αποφυγής Βέλων
+                                        <hr>
+                                        +20% Πιθανότητα Αποφυγής Βέλων
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Ζωτικότητας </div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/1/19/Stone_of_Vitality.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                        <hr>
+                                        +6
+                                        <hr>
+                                        +7
+                                    </td>
+                                    <td class="align-middle">
+                                        +500 Μέγιστο HP
+                                        <hr>
+                                        +1000 Μέγιστο HP
+                                        <hr>
+                                        +4000 Μέγιστο HP
+                                        <hr>
+                                        +15000 Μέγιστο HP
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Βιασύνης</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/b/b8/Stone_of_Haste.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +30% Ταχύτητα Κίνησης
+                                        <hr>
+                                        +35% Ταχύτητα Κίνησης
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Άμυνας</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/4/43/Stone_of_Defence.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +15 Άμυνα
+                                        <hr>
+                                        +100 Άμυνα
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="align-middle">
+                                        <div>Λίθος Μαγείας</div>
+                                        <img src="https://en-wiki.metin2.gameforge.com/images/6/69/Stone_of_Magic.png" />
+                                    </th>
+                                    <td class="align-middle">
+                                        +4
+                                        <hr>
+                                        +5
+                                    </td>
+                                    <td class="align-middle">
+                                        +250 Μέγιστο SP
+                                        <hr>
+                                        +500 Μέγιστο SP
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-    </div>
 
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
